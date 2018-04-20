@@ -1,0 +1,273 @@
+---
+---
+body {
+  background: #F6F9FC;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  font-weight: bold;
+  color: #314cb6;
+}
+
+header{
+  padding: 1rem;
+  text-align: center;
+}
+
+nav{
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    display: inline;
+    padding: 10px;
+  }
+
+  a{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #d3d3d3;
+    letter-spacing: 2px;
+  }
+
+  a:hover{
+    color: #000;
+  }
+
+  .logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #000;
+    letter-spacing: 2px;
+  }
+}
+
+.main-hero{
+  background: #FFF; 
+  height: 50vh;
+  display: flex;
+
+  .main-hero-copy{
+    margin: auto 3rem;
+  }
+
+  h1{
+    margin: 1rem 0 0 0;
+    padding: 0;
+  }
+
+  span{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #333;
+}
+
+
+.hero{
+  background: #000;
+  height: 70vh;
+  display: flex;
+  
+  .left{
+    display: flex;
+    width: 60%;
+  }
+ 
+  .right{
+    display: flex;
+    width: 40%;
+    
+    .copy-wrap{
+      margin: auto 5rem;
+      text-align: left;
+    
+    span{
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    
+     h1{
+      margin: 0.4rem 0;
+      color: #000;
+      font-weight: 100;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+     }
+      
+    }
+  }
+}
+
+.about-me{
+  display: flex;
+  background: #FFF;
+
+  h1{
+    // font-weight: 100;
+  }
+}
+
+
+.about-gradient{
+  // background: #000;
+  padding: 5rem;
+  color: #000;
+
+  p{
+    color: #000;
+  }
+}
+
+
+
+.social{
+  img{
+    width: 25px;
+  }
+}
+
+.wrap{
+  margin: 0 auto;
+  padding: 5rem 5rem 0 5rem;
+}
+
+.quote{
+  padding: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  background: #FFF;
+  
+  span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-top: 2rem;
+  }
+}
+
+
+
+
+footer{
+  text-align: center;
+  padding: 4rem 0 1rem 0;
+
+  .hireme{
+
+    span{
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      display: block;
+    }
+    
+    a{
+      margin: 2rem auto 4rem auto;
+      color: #000;
+      display: inline-block;
+      font-size: 2rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .hero{
+    .right{      
+      .copy-wrap{
+        margin: auto 2rem;
+
+        h1{
+          font-size: 2rem;
+         }
+      }
+    }
+  }
+
+  .wrap{
+    padding: 2rem;
+  }
+
+  .about-me{
+    display: block;
+  }
+
+  .about-gradient{
+    padding: 2rem;
+  }
+
+  footer{
+    padding: 3rem 3rem 1rem 3rem;
+
+    .hireme{
+      a{
+        margin: 2rem;
+      }  
+    }
+  }
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+  .hero{
+    flex-direction: column;
+    
+    .left{
+      width: 100%;
+      height: 50vh;
+      order: 1;
+    }
+   
+    .right{
+      width: 100%;
+      height: 20vh;
+      order: 2;
+      
+      .copy-wrap{
+        margin: auto 2rem;
+    
+      h1{
+        font-size: 2rem;
+       }
+    }
+    }
+  }
+
+}
+
+
